@@ -1,113 +1,175 @@
-import Image from 'next/image'
+// pages/index.tsx
+import React from 'react';
+import GridItem from './components/GridItem';
 
-export default function Home() {
+interface GridItemData {
+  title: string;
+  role: string;
+  url: string;
+  imageSrc: string;
+  bulletPoints: string[];
+}
+
+const Home: React.FC = () => {
+  const gridItems: GridItemData[] = [
+    {
+      title: 'Glitch X',
+      imageSrc: '/images/GlitchX.png',
+      role: 'Product Lead',
+      url: 'https://glitchx.app',
+      bulletPoints: [
+        'Core app architecture & implementation',
+        'Authoring visual filters',
+        'App Store optimization & marketing',
+        'Swift, Metal, AVFoundation',
+      ],
+    },
+    {
+      title: 'Arcturus XR',
+      imageSrc: '/images/Arcturus.png',
+      role: 'Senior Software Engineer',
+      url: 'https://arcturus.studio',
+      bulletPoints: [
+        'Re-architecting HoloEdit UI',
+        'Core HoloEdit issue diagnosis & resolution',
+        'Product testing',
+        'C++, Qt, Visual Studio',
+      ],
+    },
+    {
+      title: 'VSCO',
+      imageSrc: '/images/VSCO.png',
+      role: 'Consultant, Creator Tools',
+      url: 'https://vsco.co',
+      bulletPoints: [
+        'Integrating acquired tech into the app',
+        'Core app issue diagnosis & resolution',
+        'Implementing new video editing features',
+        'Swift, AVFoundation, CoreML',
+      ],
+    },
+    {
+      title: 'Novonix',
+      imageSrc: '/images/Novonix.png',
+      role: 'Consultant, Data Solutions',
+      url: 'https://novonixgroup.com',
+      bulletPoints: [
+        'Data plotter design & UX guidance',
+        'Data plotter rendering optimization',
+        'Data plotter core issue diagnosis & resolution',
+        'Angular, Highcharts',
+      ],
+    },
+    {
+      title: 'Hyperspektiv',
+      imageSrc: '/images/Hyperspektiv.png',
+      role: 'CTO',
+      url: 'https://hyperspektiv.com',
+      bulletPoints: [
+        'UI/UX co-design & implementation',
+        'Creating AR graphics engine',
+        'Ensuring uptime & shipping regular releases',
+        'Objective-C, Swift, Metal, ARKit',
+      ],
+    },
+    {
+      title: 'Within',
+      imageSrc: '/images/Within.png',
+      role: 'Senior Software Engineer',
+      url: 'https://with.in',
+      bulletPoints: [
+        'Within VR app issue diagnosis & resolution',
+        'Native iOS plugin engineering',
+        'XR R&D',
+        'Unity, C#, Objective-C',
+      ],
+    },
+    {
+      title: 'Dalhousie University',
+      imageSrc: '/images/Dalhousie.png',
+      role: 'Sessional Instructor',
+      url: 'https://dal.ca',
+      bulletPoints: [
+        'Designing & instructing technical curriculum',
+        'Teaching Agile programming & full-stack apps',
+        'Leading startup workshops & hackathons',
+        'React, Angular, Firebase',
+      ],
+    },
+    {
+      title: 'Hyperstream',
+      imageSrc: '/images/Hyperstream.png',
+      role: 'CTO',
+      url: 'https://hyperspektiv.com',
+      bulletPoints: [
+        'UI/UX co-design & implementation',
+        'Streaming engine from Metal to OBS',
+        'Leading dev team to implement AR graphics',
+        'Swift, Metal, ARKit',
+      ],
+    },
+    {
+      title: 'Hype Machine',
+      imageSrc: '/images/HypeMachine.png',
+      role: 'Consultant',
+      url: 'https://hypem.com',
+      bulletPoints: [
+        'App debugging & optimization',
+        'UI implementation',
+        'iOS deployment & technical support',
+        'Objective-C',
+      ],
+    },
+    {
+      title: 'FlyMachine',
+      imageSrc: '/images/FlyMachine.png',
+      role: 'Consultant, Graphics',
+      url: 'https://www.youtube.com/watch?v=sC37mhaFIhE',
+      bulletPoints: [
+        'Video filter design & implementation',
+        'UI Performance Optimization',
+        'Web graphics context prototyping',
+        'React, WebGL',
+      ],
+    },
+    {
+      title: 'TRASH',
+      imageSrc: '/images/Trash.png',
+      role: 'Consultant',
+      url: 'https://trash.app',
+      bulletPoints: [
+        'Video pipeline engineering',
+        'Assisting ML research',
+        'iOS deployment & technical support',
+        'Swift, CoreML',
+      ],
+    },
+    {
+      title: 'Glitch Wizard',
+      imageSrc: '/images/GlitchWizard.png',
+      role: 'Product Lead',
+      url: 'https://glitchwizard.app',
+      bulletPoints: [
+        'App branding, design, UI/UX',
+        'Leading dev team to build graphics engine',
+        'Independent publishing & Apple feature',
+        'Objective-C, GLSL, GPUImage',
+      ],
+    },
+  ];
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className=""> 
+      <h1 className="text-center text-3xl font-bold mt-8 mb-6">Allan Lavell - Technical Portfolio</h1>
+      <div className="container mx-auto px-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          {gridItems.map((item, index) => (
+            <GridItem key={index} {...item} />
+          ))}
         </div>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    </div>
+  );
 }
+
+export default Home;
