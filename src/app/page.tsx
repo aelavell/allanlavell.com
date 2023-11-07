@@ -37,15 +37,15 @@ const Home: React.FC = () => {
       ],
     },
     {
-      title: 'VSCO',
-      imageSrc: '/images/VSCO.png',
-      role: 'Consultant, Creator Tools',
-      url: 'https://vsco.co',
+      title: 'Within',
+      imageSrc: '/images/Within.png',
+      role: 'Senior Software Engineer',
+      url: 'https://with.in',
       bulletPoints: [
-        'Integrating acquired tech into the app',
-        'Core app issue diagnosis & resolution',
-        'Implementing new video editing features',
-        'Swift, AVFoundation, CoreML',
+        'Within VR app issue diagnosis & resolution',
+        'Native iOS plugin engineering',
+        'XR R&D',
+        'Unity, C#, Objective-C',
       ],
     },
     {
@@ -73,15 +73,15 @@ const Home: React.FC = () => {
       ],
     },
     {
-      title: 'Within',
-      imageSrc: '/images/Within.png',
-      role: 'Senior Software Engineer',
-      url: 'https://with.in',
+      title: 'VSCO',
+      imageSrc: '/images/VSCO.png',
+      role: 'Consultant, Creator Tools',
+      url: 'https://vsco.co',
       bulletPoints: [
-        'Within VR app issue diagnosis & resolution',
-        'Native iOS plugin engineering',
-        'XR R&D',
-        'Unity, C#, Objective-C',
+        'Integrating acquired tech into the app',
+        'Core app issue diagnosis & resolution',
+        'Implementing new video editing features',
+        'Swift, AVFoundation, CoreML',
       ],
     },
     {
@@ -132,6 +132,7 @@ const Home: React.FC = () => {
         'React, WebGL',
       ],
     },
+    /*
     {
       title: 'TRASH',
       imageSrc: '/images/Trash.png',
@@ -143,7 +144,7 @@ const Home: React.FC = () => {
         'iOS deployment & technical support',
         'Swift, CoreML',
       ],
-    },
+    },*/
     {
       title: 'Glitch Wizard',
       imageSrc: '/images/GlitchWizard.png',
@@ -160,9 +161,24 @@ const Home: React.FC = () => {
 
   return (
     <div className=""> 
-      <h1 className="text-center text-3xl font-bold mt-8 mb-6">Allan Lavell - Technical Portfolio</h1>
+      <h1 className="text-center text-6xl font-bold mt-8 mb-6">Allan Lavell - Technical Portfolio</h1>
       <div className="container mx-auto px-4 mb-6">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div className="mx-auto gap-2 justify-center">
+          <div className="w-full h-44 bg-gradient-to-b from-white to-purple-200 rounded-2xl"> 
+            <img className="w-44 h-44 mt-1 mx-auto rounded-xl" src="/images/allan.jpg"></img>
+          </div>
+          <h2 className="text-lg font-bold pt-3.5">Allan Lavell</h2>
+          <ul className="pl-3 pt-3  list-disc">
+            <li key="0">Canadian programmer, entrepreneur</li>
+            <li>Shipped over 10 products (4 independent iOS apps)</li>
+            <li>Highly motivated to do good on this planet</li>
+            <li><p className="">
+              <a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://www.linkedin.com/in/allan-lavell/">LinkedIn</a> &nbsp;<a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://twitter.com/allanlavell">X</a> &nbsp;<a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://www.instagram.com/allan.world.peace">Instagram</a>
+              </p>
+            </li>
+          </ul>
+        </div>
           {gridItems.map((item, index) => (
             <GridItem key={index} {...item} />
           ))}
