@@ -161,7 +161,7 @@ const Home: React.FC = () => {
 
   return (
     <div className=""> 
-      <h1 className="text-center text-6xl font-bold mt-8 mb-6">Allan Lavell - Technical Portfolio</h1>
+      <h1 className="text-center text-3xl font-bold mt-8 mb-6">Allan Lavell - Technical Portfolio</h1>
       <div className="container mx-auto px-4 mb-6">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="mx-auto gap-2 justify-center">
