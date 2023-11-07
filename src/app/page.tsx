@@ -168,7 +168,7 @@ const Home: React.FC = () => {
           <div className="w-full h-44 bg-gradient-to-b from-white to-purple-200 rounded-2xl"> 
             <img className="w-44 h-44 mt-1 mx-auto rounded-xl" src="/images/allan.jpg"></img>
           </div>
-          <h2 className="text-lg font-bold pt-3.5">Allan Lavell</h2>
+          <h2 className="text-lg font-bold pt-3.5">Bio</h2>
           <ul className="pl-3 pt-3  list-disc">
             <li key="0">Canadian programmer, entrepreneur</li>
             <li>Shipped over 10 products (4 independent iOS apps)</li>
