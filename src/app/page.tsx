@@ -16,24 +16,12 @@ const Home: React.FC = () => {
       title: 'Glitch X',
       imageSrc: '/images/GlitchX.png',
       role: 'Product Lead',
-      url: 'https://apple.co/3PZAaex',
+      url: 'https://glitchxl.app',
       bulletPoints: [
         'Core app architecture & implementation',
         'Authoring visual filters',
         'App Store optimization & marketing',
         'Swift, Metal, AVFoundation',
-      ],
-    },
-    {
-      title: 'Arcturus XR',
-      imageSrc: '/images/Arcturus.png',
-      role: 'Senior Software Engineer',
-      url: 'https://arcturus.studio',
-      bulletPoints: [
-        'Re-architecting HoloEdit UI',
-        'Core HoloEdit issue diagnosis & resolution',
-        'Product testing',
-        'C++, Qt, Visual Studio',
       ],
     },
     {
@@ -46,6 +34,18 @@ const Home: React.FC = () => {
         'Native iOS plugin engineering',
         'XR R&D',
         'Unity, C#, Objective-C',
+      ],
+    },
+    {
+      title: 'Arcturus XR',
+      imageSrc: '/images/Arcturus.png',
+      role: 'Senior Software Engineer',
+      url: 'https://arcturus.studio',
+      bulletPoints: [
+        'Re-architecting HoloEdit UI',
+        'Core HoloEdit issue diagnosis & resolution',
+        'Product testing',
+        'C++, Qt, Visual Studio',
       ],
     },
     {
