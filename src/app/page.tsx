@@ -13,15 +13,15 @@ interface GridItemData {
 const Home: React.FC = () => {
   const gridItems: GridItemData[] = [
     {
-      title: 'Glitch X',
-      imageSrc: '/images/GlitchX.png',
-      role: 'Product Lead',
-      url: 'https://glitchxl.app',
+      title: 'Hyperspektiv',
+      imageSrc: '/images/Hyperspektiv.png',
+      role: 'CTO',
+      url: 'https://hyperspektiv.com',
       bulletPoints: [
-        'Core app architecture & implementation',
-        'Authoring visual filters',
-        'App Store optimization & marketing',
-        'Swift, Metal, AVFoundation',
+        'UI/UX co-design & implementation',
+        'Creating AR graphics engine',
+        'Ensuring uptime & shipping regular releases',
+        'Objective-C, Swift, Metal, ARKit',
       ],
     },
     {
@@ -49,6 +49,18 @@ const Home: React.FC = () => {
       ],
     },
     {
+      title: 'Glitch X',
+      imageSrc: '/images/GlitchX.png',
+      role: 'Product Lead',
+      url: 'https://glitchxl.app',
+      bulletPoints: [
+        'Core app architecture & implementation',
+        'Authoring visual filters',
+        'App Store optimization & marketing',
+        'Swift, Metal, AVFoundation',
+      ],
+    },
+    {
       title: 'Novonix',
       imageSrc: '/images/Novonix.png',
       role: 'Consultant, Data Solutions',
@@ -58,18 +70,6 @@ const Home: React.FC = () => {
         'Data plotter rendering optimization',
         'Data plotter core issue diagnosis & resolution',
         'Angular, Highcharts',
-      ],
-    },
-    {
-      title: 'Hyperspektiv',
-      imageSrc: '/images/Hyperspektiv.png',
-      role: 'CTO',
-      url: 'https://hyperspektiv.com',
-      bulletPoints: [
-        'UI/UX co-design & implementation',
-        'Creating AR graphics engine',
-        'Ensuring uptime & shipping regular releases',
-        'Objective-C, Swift, Metal, ARKit',
       ],
     },
     {
