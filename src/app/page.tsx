@@ -52,7 +52,7 @@ const Home: React.FC = () => {
       title: 'Glitch X',
       imageSrc: '/images/GlitchX.png',
       role: 'Product Lead',
-      url: 'apple.co/3PZAaex',
+      url: 'https://apple.co/3PZAaex',
       bulletPoints: [
         'Core app architecture & implementation',
         'Authoring visual filters',
