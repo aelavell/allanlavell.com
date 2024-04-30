@@ -37,6 +37,18 @@ const Home: React.FC = () => {
       ],
     },
     {
+      title: 'Dalhousie University',
+      imageSrc: '/images/Dalhousie.png',
+      role: 'Lecturer',
+      url: 'https://dal.ca',
+      bulletPoints: [
+        'Designing & instructing CSCI 5193: Technology Innovation',
+        'Teaching Agile programming & full-stack apps',
+        'Leading startup workshops & hackathons',
+        'React, Angular, Firebase',
+      ],
+    },
+    {
       title: 'Hyperspektiv',
       imageSrc: '/images/Hyperspektiv.png',
       role: 'CTO',
@@ -94,18 +106,6 @@ const Home: React.FC = () => {
         'Core app issue diagnosis & resolution',
         'Implementing new video editing features',
         'Swift, AVFoundation, CoreML',
-      ],
-    },
-    {
-      title: 'Dalhousie University',
-      imageSrc: '/images/Dalhousie.png',
-      role: 'Sessional Instructor',
-      url: 'https://dal.ca',
-      bulletPoints: [
-        'Designing & instructing technical curriculum',
-        'Teaching Agile programming & full-stack apps',
-        'Leading startup workshops & hackathons',
-        'React, Angular, Firebase',
       ],
     },
     {
