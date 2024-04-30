@@ -13,6 +13,18 @@ interface GridItemData {
 const Home: React.FC = () => {
   const gridItems: GridItemData[] = [
     {
+      title: 'ShiftKey Labs',
+      imageSrc: '/images/shiftkey-labs.png',
+      role: 'Program Coordinator',
+      url: 'https://shiftkeylabs.ca',
+      bulletPoints: [
+        'Lead Developer of ShiftKey Academy Up Curriculum',
+        'Coordinating Events & Hackathons',
+        'ShiftKey Academy Reimbursement Coordinator',
+        'React Native, Firebase, iOS, Android',
+      ],
+    },
+    {
       title: 'Hyperspektiv',
       imageSrc: '/images/Hyperspektiv.png',
       role: 'CTO',
