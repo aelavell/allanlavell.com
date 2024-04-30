@@ -25,6 +25,18 @@ const Home: React.FC = () => {
       ],
     },
     {
+      title: 'Glitch X',
+      imageSrc: '/images/GlitchX.png',
+      role: 'Product Lead',
+      url: 'https://apple.co/3PZAaex',
+      bulletPoints: [
+        'Core app architecture & implementation',
+        'Authoring visual filters',
+        'App Store optimization & marketing',
+        'Swift, Metal, AVFoundation',
+      ],
+    },
+    {
       title: 'Hyperspektiv',
       imageSrc: '/images/Hyperspektiv.png',
       role: 'CTO',
@@ -58,18 +70,6 @@ const Home: React.FC = () => {
         'Core HoloEdit issue diagnosis & resolution',
         'Product testing',
         'C++, Qt, Visual Studio',
-      ],
-    },
-    {
-      title: 'Glitch X',
-      imageSrc: '/images/GlitchX.png',
-      role: 'Product Lead',
-      url: 'https://apple.co/3PZAaex',
-      bulletPoints: [
-        'Core app architecture & implementation',
-        'Authoring visual filters',
-        'App Store optimization & marketing',
-        'Swift, Metal, AVFoundation',
       ],
     },
     {
