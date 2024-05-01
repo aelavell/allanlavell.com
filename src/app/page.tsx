@@ -178,7 +178,7 @@ const Home: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="mx-auto gap-2 justify-center">
           <div className="w-full h-44 bg-gradient-to-b from-white to-purple-200 rounded-2xl"> 
-            <img className="w-44 h-44 mt-1 mx-auto rounded-full" src="/images/allan3.jpg"></img>
+            <img className="w-44 h-44 mt-1 mx-auto rounded-full" src="/images/allan.png"></img>
           </div>
           <h2 className="text-lg font-bold pt-3.5">Bio</h2>
           <ul className="pl-3 pt-3  list-disc">
