@@ -186,7 +186,7 @@ const Home: React.FC = () => {
             <li>Shipped over 10 products (4 independent iOS apps)</li>
             <li>Highly motivated to do good on this planet</li>
             <li><p className="">
-              <a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://www.linkedin.com/in/allan-lavell/">LinkedIn</a> &nbsp;<a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://twitter.com/allanlavell">X</a> &nbsp;<a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://www.instagram.com/allan.world.peace">Instagram</a>
+              <a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://www.linkedin.com/in/allan-lavell/">LinkedIn</a> &nbsp;<a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://twitter.com/allanlavell">X</a> &nbsp;<a className="text-pink-600 underline hover:text-pink-700" target="_blank" href="https://www.instagram.com/lavell.world.peace">Instagram</a>
               </p>
             </li>
           </ul>
